@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@prisma/generator-helper": "^0.0.26",
-    "@prisma/photon": "2.0.0-preview017.2",
+    "@prisma/photon": "git+https://github.com/codejamninja/photonjs.git#npm",
     "@prisma/sdk": "^0.0.64",
     "@types/pluralize": "^0.0.29",
     "pluralize": "^8.0.0",
