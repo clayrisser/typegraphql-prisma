@@ -1,0 +1,16 @@
+import { DMMF } from "@prisma/photon/runtime";
+export declare type BaseKeys = keyof Pick<DMMF.Mapping, "model" | "plural">;
+export declare const baseKeys: BaseKeys[];
+export declare type ModelKeys = keyof Exclude<DMMF.Mapping, BaseKeys>;
+export declare type SupportedQueries = keyof Pick<DMMF.Mapping, "findOne" | "findMany" | "aggregate">;
+export declare const supportedQueries: SupportedQueries[];
+export declare type SupportedMutations = keyof Pick<DMMF.Mapping, "create" | "delete" | "update" | "updateMany" | "upsert">;
+export declare const supportedMutations: SupportedMutations[];
+export declare const modelsFolderName = "models";
+export declare const enumsFolderName = "enums";
+export declare const inputsFolderName = "inputs";
+export declare const outputsFolderName = "outputs";
+export declare const resolversFolderName = "resolvers";
+export declare const argsFolderName = "args";
+export declare const relationsResolversFolderName = "relations";
+export declare const crudResolversFolderName = "crud";

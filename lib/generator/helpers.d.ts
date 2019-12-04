@@ -1,0 +1,11 @@
+import { DMMF } from "@prisma/photon/runtime";
+import { DMMFTypeInfo } from "./types";
+export declare function noop(): void;
+export declare function getBaseModelTypeName(modelName: string): string;
+export declare function getFieldTSType(typeInfo: DMMFTypeInfo, modelNames: string[]): string;
+export declare function mapScalarToTSType(scalar: string): "string" | "number" | "boolean" | "Date";
+export declare function getTypeGraphQLType(typeInfo: DMMFTypeInfo, modelNames: string[]): string;
+export declare function mapScalarToTypeGraphQLType(scalar: string): "Date" | "ID" | "String" | "Boolean" | "Int" | "Float";
+export declare function selectInputTypeFromTypes(inputTypes: DMMF.SchemaArgInputType[]): DMMF.SchemaArgInputType;
+export declare function camelCase(str: string): string;
+export declare function pascalCase(str: string): string;

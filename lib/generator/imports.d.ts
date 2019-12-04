@@ -1,0 +1,16 @@
+import { SourceFile } from "ts-morph";
+import { GeneratedResolverData } from "./types";
+export declare function generateTypeGraphQLImports(sourceFile: SourceFile): void;
+export declare function generateDataloaderImport(sourceFile: SourceFile): void;
+export declare function generateArgsBarrelFile(sourceFile: SourceFile, argsTypeNames: string[]): void;
+export declare function generateModelsBarrelFile(sourceFile: SourceFile, modelNames: string[]): void;
+export declare function generateEnumsBarrelFile(sourceFile: SourceFile, enumTypeNames: string[]): void;
+export declare function generateInputsBarrelFile(sourceFile: SourceFile, inputTypeNames: string[]): void;
+export declare function generateOutputsBarrelFile(sourceFile: SourceFile, outputTypeNames: string[]): void;
+export declare function generateIndexFile(sourceFile: SourceFile): void;
+export declare function generateResolversBarrelFile(type: "crud" | "relations", sourceFile: SourceFile, relationResolversData: GeneratedResolverData[]): void;
+export declare const generateModelsImports: (sourceFile: SourceFile, elementsNames: string[], level?: number) => void;
+export declare const generateEnumsImports: (sourceFile: SourceFile, elementsNames: string[], level?: number) => void;
+export declare const generateInputsImports: (sourceFile: SourceFile, elementsNames: string[], level?: number) => void;
+export declare const generateOutputsImports: (sourceFile: SourceFile, elementsNames: string[], level?: number) => void;
+export declare const generateArgsImports: (sourceFile: SourceFile, elementsNames: string[], level?: number) => void;
